@@ -26,3 +26,5 @@ PS: When you use argon2 to generate key from password remeber to remeber ;)
 or save not only password but salt and other parameters too.
 
 github.com/pawplo/cryptofile
+
+aes.c and aes.h files from [github.com/kokke/tiny-AES-c](https://github.com/kokke/tiny-AES-c)
