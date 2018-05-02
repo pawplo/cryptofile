@@ -11,7 +11,7 @@ int random_bytes(unsigned char *buf, int num)
 	int ret;
 	
 	if (in_file == -1) {
-		in_file = open("/dev/random", O_RDONLY);
+		in_file = open("/dev/urandom", O_RDONLY);
 		if (in_file == -1) {
 			fprintf(stderr, "open() [%s]\n", strerror(errno));
 			return 1;
