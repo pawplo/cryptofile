@@ -2,7 +2,7 @@ ifeq ($(CC), )
 	CC := gcc
 endif
 
-.PHONY: all install clean
+.PHONY: all install unistall test clean
 
 PREFIX ?= /usr/local
 
@@ -16,6 +16,9 @@ install: all
 
 uninstall:
 	rm $(DESTDIR)$(PREFIX)/bin/cryptofile
+
+test:
+	./test.sh
 
 clean:
 	rm -rf cryptofile
